@@ -1,0 +1,39 @@
+ -- Question:
+-- How many records are in my community table?
+
+--Answer -Step 1: Count rows
+-- Step 2: Return total number
+
+SELECT COUNT(*) AS total_records
+FROM dbo.Smartphone_Usage_And_Addiction_Analysis_7500_Rows;
+
+CREATE VIEW v_table1_count
+AS
+SELECT COUNT(*) AS total_records
+FROM dbo.Smartphone_Usage_And_Addiction_Analysis_7500_Rows
+
+SELECT *
+INTO t_table1_count
+FROM v_table1_count;
+
+DROP TABLE IF EXISTS t_table1_count;
+
+CREATE TABLE t_table1_count (
+    total_records INT NOT NULL PRIMARY KEY
+);
+TRUNCATE TABLE t_table1_count;
+
+INSERT INTO t_table1_count (total_records)
+SELECT total_records
+FROM v_table1_count;
+
+
+CREATE PROCEDURE sp_load_table1_count
+AS
+BEGIN
+    TRUNCATE TABLE t_table1_count;
+
+    INSERT INTO t_table1_count (total_records)
+    SELECT total_records
+    FROM v_table1_count;
+END;
