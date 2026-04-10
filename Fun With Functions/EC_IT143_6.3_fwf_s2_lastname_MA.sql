@@ -1,0 +1,2 @@
+-- A: I will use the SUBSTRING function to find the space and grab everything 
+-- to the right of it, then use LTRIM to clean up any leading spaces.

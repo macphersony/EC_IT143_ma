@@ -1,0 +1,3 @@
+-- A: I will update my existing trigger (or create a new one) to use the 
+-- SUSER_NAME() function, which captures the login name of the person 
+-- executing the update statement.

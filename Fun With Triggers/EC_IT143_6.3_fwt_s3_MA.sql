@@ -1,0 +1,2 @@
+-- I researched AFTER UPDATE triggers and the 'inserted' virtual table here:
+-- https://learn.microsoft.com/en-us/sql/t-sql/statements/create-trigger-transact-sql

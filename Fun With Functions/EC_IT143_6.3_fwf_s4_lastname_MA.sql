@@ -1,0 +1,2 @@
+-- I researched the SUBSTRING and LTRIM functions at Microsoft Docs:
+-- https://learn.microsoft.com/en-us/sql/t-sql/functions/substring-transact-sql

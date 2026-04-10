@@ -1,0 +1,2 @@
+-- I researched the SUSER_NAME() function in the Microsoft T-SQL documentation:
+-- https://learn.microsoft.com/en-us/sql/t-sql/functions/suser-name-transact-sql

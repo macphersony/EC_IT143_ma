@@ -1,0 +1,2 @@
+-- A: I will create an AFTER UPDATE trigger that uses the GETDATE() function 
+-- to update a hidden 'last_modified_date' column whenever a row is changed.

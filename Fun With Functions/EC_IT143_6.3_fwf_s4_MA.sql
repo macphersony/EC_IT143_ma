@@ -1,0 +1,4 @@
+-- Step 4: Researching string manipulation functions
+-- I used the Microsoft SQL documentation for CHARINDEX and LEFT:
+-- https://learn.microsoft.com/en-us/sql/t-sql/functions/charindex-transact-sql
+-- https://learn.microsoft.com/en-us/sql/t-sql/functions/left-transact-sql

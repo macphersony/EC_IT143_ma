@@ -1,0 +1,1 @@
+-- Q: How can I extract the LAST name from the ContactName column in my customers table?
