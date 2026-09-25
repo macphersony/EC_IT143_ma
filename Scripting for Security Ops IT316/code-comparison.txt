@@ -1,0 +1,15 @@
+[C2 SERVER (Your Host Machine)]                    [C2 CLIENT (Linux Agent VM)]
+       │                                                          │
+       ├─► [Initialize TCP Socket on Port 4546]                   │
+       ├─► [Listen & Stall via s.accept()]                        │
+       │                                                          │
+       │   ◄─────────────────[Establishes TCP Handshake]──────────┤
+       │                                                          │
+       ├───► [Spawn: Thread 1 - shellreceiver]                    │
+       ├───► [Spawn: Thread 2 - shellsender]                      │
+       │                                                          │
+       │                                                          │
+       ▼───[OPERATOR INTERACTION LOOP]                            ▼───[AGENT RUNTIME]
+[Type Command] ──► [conn.send()] ───(Raw TCP)───► [Read Buffer] ──► [Run via OS Shell]
+                                                                          │
+[Console Display] ◄── [conn.recv()] ◄───(Raw Bytes)─── [Return stdout] ───┘
